@@ -41,4 +41,5 @@ resource "aws_instance" "name" {
     instance_type = "t3.micro"
   subnet_id = data.aws_subnet.name.id
   vpc_security_group_ids = [data.aws_security_group.selected.id]
+ 
 }
